@@ -1,0 +1,45 @@
+body {
+    font-family: system-ui;
+}
+
+div {
+    margin: 2%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border-bottom: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: #008CBA;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+#tablesFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scrollTable {
+    height: 360px;
+    width: auto;
+    overflow-y: scroll;
+}

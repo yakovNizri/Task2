@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Country search</title>
+</head>
+
+<body>
+    <h2>Country search</h2>
+
+    <form>
+        <input type="text" id="inputSearch" placeholder="Enter Country name">
+        <input type="submit" id="buttonSearch" value="Search">
+    </form>
+
+    <div id="statistics">
+        <table>
+            <thead>
+                <tr>
+                    <th>country count</th>
+                    <th>population total</th>
+                    <th>population AVG</th>
+                </tr>
+                </thead>
+            <tbody id="statisBody">
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="tablesFlex">
+        <div class="scrollTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>country name</th>
+                        <th>population count</th>
+                    </tr>
+                    </thead>
+                <tbody id="resSearchPopulation">
+                    <tr>
+                        <td>--</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="scrollTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>region</th>
+                        <th>country total</th>
+                    </tr>
+                </thead>
+                <tbody id="resSearchRegion">
+                    <tr>
+                        <td>--</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="scrollTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>currency</th>
+                        <th>country total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>--</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
