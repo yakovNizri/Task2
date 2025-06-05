@@ -49,18 +49,23 @@ export class StatisticsCountry {
         return counts;
     }
 
-    // static clacSumCounteryPerCurrencies(arrC) {
-    //     const arrCurrencies = [];
-    //     const counts = {};
+    static clacSumCounteryPerCurrencies(arrC) {
+        const arrCurrencies = [];
+        const counts = {};
 
-    //     arrC.forEach(c => {
-    //         arrCurrencies.push(c.currencies);
-    //     });
+        arrC.forEach(c => {
+            Object.keys(c.currencies).forEach(coin => {
+                console.log(coin);
+                arrCurrencies.push(c.currencies[coin].name)
+            });
+            // console.log(coins);
 
-    //     return arrCurrencies;
-        
-    //     // arrRegion.forEach(c => counts[c][0] = (counts[c][0] || 0) + 1);
+        });
 
-    //     // return counts;
-    // }
+        return arrCurrencies;
+
+        // arrRegion.forEach(c => counts[c][0] = (counts[c][0] || 0) + 1);
+
+        // return counts;
+    }
 }

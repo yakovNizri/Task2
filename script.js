@@ -18,7 +18,12 @@ async function loadData() {
     // console.log(allCountry);
 }
 
-loadData();
+document.querySelector('#showAll').addEventListener('click', () => {
+    allCountry.length = 0;
+    document.querySelector('#resSearchPopulation').innerHTML = '<tr><td>--</td><td>0</td></tr>';
+    loadData();
+})
+
 
 function showStatistics(allCountry) {
     const arrStatistics = [...allCountry];
@@ -64,7 +69,7 @@ function showSearchRegion(resJ) {
     const res = StatisticsCountry.clacSumCounteryPerRegion(resJ);
     // const res1 = StatisticsCountry.clacSumCounteryPerCurrencies(resJ);
     // console.log(res1);
-    
+
     let showTableRes = '';
     Object.keys(res).forEach(c => {
         showTableRes += `<tr>
